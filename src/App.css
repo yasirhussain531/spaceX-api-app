@@ -31,3 +31,15 @@ body{
 #modal h1{
     color:rgb(12, 6, 6);
 }
+
+#error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#errorimg{
+    justify-content: center;
+    align-items: center;
+   top: 50%;
+}

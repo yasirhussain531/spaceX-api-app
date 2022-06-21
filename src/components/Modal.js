@@ -14,7 +14,9 @@ function Modal() {
          {
               launch.map(
                 (space) =>
-                <ModalCard flight_number={space.flight_number} launch_year={space.launch_year} mission_name = {space.mission_name} article_link = {space.links.article_link}/>
+                <ModalCard flight_number={space.flight_number} launch_year={space.launch_year} mission_name = {space.mission_name} article_link = {space.links.article_link}
+                launch_date ={space.launch_date} details={space.details}
+                />
                 )
               }
         </>

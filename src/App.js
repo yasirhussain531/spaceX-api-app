@@ -4,6 +4,7 @@ import Home from "./Home";
 import Rocket from "./Rocket";
 import Modal from "./components/Modal";
 import ModalRocket from "./components/ModalRocket.js";
+import Error404 from "./components/Error404";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/Rocket" element={<Rocket/>} />
         <Route path="/Modal" element={<Modal/>}/>
         <Route path="/ModalRocket" element={<ModalRocket/>}/>
+        <Route path="*" element={<Error404/>}/> 
 
         
       </Routes>

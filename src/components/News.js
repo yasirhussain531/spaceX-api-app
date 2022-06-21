@@ -6,6 +6,14 @@ function News() {
     <div>
         <div className='container my-5'>
           <h2>SpaceX Launches</h2>
+
+          <div id='error'>
+
+          </div>
+           
+            
+
+          
           
       </div>
     </div>
