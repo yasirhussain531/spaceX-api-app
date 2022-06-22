@@ -31,7 +31,7 @@ function Rocket() {
         className="d-block mx-auto"
         style={{ width: "350px" }}
       />
-      <News />
+      <News heading ="SpaceX Rocket" />
       {btnReload ? (
         <button
           type="button"

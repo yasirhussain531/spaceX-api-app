@@ -12,11 +12,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Rocket" element={<Rocket/>} />
-        <Route path="/Modal" element={<Modal/>}/>
+        <Route path="/Modal/:id" element={<Modal/>}/>
         <Route path="/ModalRocket" element={<ModalRocket/>}/>
         <Route path="*" element={<Error404/>}/> 
 
-        
+
+
       </Routes>
     </BrowserRouter>
   );

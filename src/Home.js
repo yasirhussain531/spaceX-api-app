@@ -17,13 +17,11 @@ function Home() {
         setLaunch(resp);
       })
       .catch(() => {
-        document.getElementById("error").innerHTML = "  We're Sorry , \" The  API Failed To Load \" Please Refresh The Page ";
+        document.getElementById("error").innerHTML =
+          '  We\'re Sorry , " The  API Failed To Load " Please Refresh The Page ';
         setBtnReload(true);
       });
   });
-
-
-
 
   return (
     <div className="App">
@@ -33,7 +31,7 @@ function Home() {
         className="d-block mx-auto"
         style={{ width: "350px" }}
       />
-      <News />
+      <News heading="SpaceX Launch" />
       {btnReload ? (
         <button
           type="button"
@@ -47,11 +45,7 @@ function Home() {
       )}
       {launch.map((space) => (
         <NewsItem
-          article_link={space.article_link}
-          launch_date={space.launch_year}
-          mission_name={space.mission_name}
-          details={space.details}
-          img={space.links.mission_patch_small}
+          space={space}
         />
       ))}
     </div>

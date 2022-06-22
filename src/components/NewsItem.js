@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function NewsItem(props) {
+function NewsItem({space}) {
   return (
     <div className="container ">
       <>
@@ -16,10 +16,10 @@ function NewsItem(props) {
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">{props.mission_name}</h5>
-                <p className="card-text">{props.details}</p>
-                <p className="card-text">Launch Year:{props.launch_date}</p>
-                <Link to="/Modal" type="button" class="btn btn-primary">
+                <h5 className="card-title">{space.mission_name}</h5>
+                <p className="card-text">{space.details}</p>
+                <p className="card-text">Launch Year:{space.launch_date}</p>
+                <Link to={`/Modal/${space.flight_number}`} type="button" class="btn btn-primary" onClick={space.functionclick}>
                   Launch Details
                 </Link>
               </div>
