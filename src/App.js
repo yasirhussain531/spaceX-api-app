@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Rocket" element={<Rocket/>} />
         <Route path="/Modal/:id" element={<Modal/>}/>
-        <Route path="/ModalRocket" element={<ModalRocket/>}/>
+        <Route path="/ModalRocket/:id" element={<ModalRocket/>}/>
         <Route path="*" element={<Error404/>}/> 
 
 

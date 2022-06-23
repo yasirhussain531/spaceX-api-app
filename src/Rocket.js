@@ -43,13 +43,9 @@ function Rocket() {
       ) : (
         " "
       )}
-      {rocket.map((space) => (
+      {rocket.map((rocket) => (
         <RocketItem
-          article_link={space.article_link}
-          launch_date={space.mass.kg}
-          mission_name={space.name}
-          details={space.description}
-          flickr_images={space.flickr_images[1]}
+          rocket={rocket}
         />
       ))}
     </div>
