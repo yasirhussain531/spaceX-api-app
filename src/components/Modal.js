@@ -25,7 +25,7 @@ function Modal(props) {
     <ul className="list-group list-group-flush ">
         <h1 className="text-warning">{launch.mission_name}</h1>
         <hr></hr>
-      <li className="list-group-item">Mission ID: {launch.mission_id}</li>
+      <li className="list-group-item">Mission Name: {launch.mission_name}</li>
       <li className="list-group-item">Flight Number: {launch.flight_number}</li>
       <li className="list-group-item">Launch Year: {launch.launch_year}</li>
       <li className="list-group-item">Launch Date: {launch.launch_date_local}</li>

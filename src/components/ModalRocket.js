@@ -23,7 +23,7 @@ function Rocket() {
       <ul className="list-group list-group-flush ">
         <h1>Details</h1>
         <li className="list-group-item">Rocket Name: {rocket.rocket_name}</li>
-        <li className="list-group-item">Rocket ID: {rocket.rocket_id}</li>
+        <li className="list-group-item">Rocket ID: {rocket.id}</li>
         <li className="list-group-item">Rocket TYPE: {rocket.rocket_type}</li>
         <li className="list-group-item">Total Cost: {rocket.cost_per_launch}$</li>
 

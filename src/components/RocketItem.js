@@ -32,7 +32,7 @@ function rocketItem({rocket}) {
         <h5 className="card-title"> {rocket.rocket_name}</h5>
         <p className="card-text">{rocket.description}</p>
         <p className="card-text">Weight: {rocket.mass.kg} KG</p>
-        <Link to={`/ModalRocket/${rocket.id}`} type="button" class="btn btn-primary" >Launch Details</Link>
+        <Link to={`/ModalRocket/${rocket.rocket_id}`} type="button" class="btn btn-primary" onClick={rocket.functionclick}>Launch Details</Link>
         
       </div>
     </div>

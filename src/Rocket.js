@@ -3,10 +3,12 @@ import Navbar from "./components/Navbar";
 import "./App.css";
 import RocketItem from "./components/RocketItem";
 import News from "./components/News";
+import Spinner from "./components/Spinner";
 
 function Rocket() {
   const [rocket, setRocket] = useState([]);
   const [btnReload, setBtnReload] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     fetch("https://api.spacexdata.com/v3/rockets")
@@ -14,6 +16,7 @@ function Rocket() {
         return res.json();
       })
       .then((resp) => {
+        setLoading(true);
         setRocket(resp);
       })
       .catch(() => {
@@ -32,6 +35,7 @@ function Rocket() {
         style={{ width: "350px" }}
       />
       <News heading ="SpaceX Rocket" />
+      {loading ? (''): (<Spinner/>  )}
       {btnReload ? (
         <button
           type="button"
